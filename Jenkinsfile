@@ -1,8 +1,8 @@
 node {
 
-
-   def IMAGE="$PROJET/app:4.5"
    def PROJET="xavier-formation"
+   def IMAGE="$PROJET/app:4.5"
+   
 
     stage('Clone') {
           checkout scm
