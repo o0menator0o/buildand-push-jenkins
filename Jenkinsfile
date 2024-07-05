@@ -1,7 +1,6 @@
 node {
 
-   def PROJET="xavier-formation"
-   def IMAGE="$PROJET/app:4.5"
+   def IMAGE="$PROJET/app:$VERSION"
    
 
     stage('Clone') {
