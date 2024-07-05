@@ -2,6 +2,7 @@ node {
 
 
    def IMAGE="workout/app:4.5"
+   def PROJET="xavier-formation"
 
     stage('Clone') {
           checkout scm
