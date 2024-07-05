@@ -1,7 +1,6 @@
 node {
 
    def IMAGE="$PROJET/app:$VERSION"
-   
 
     stage('Clone') {
           checkout scm
@@ -25,6 +24,7 @@ node {
     }
    stage('compuse_up') {
        sh 'docker compose up --detach'
+       sh 'docker compose ps'
     }
 
 }
